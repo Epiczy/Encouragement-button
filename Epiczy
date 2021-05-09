@@ -1,0 +1,17 @@
+echo "# Encouragement-button" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Epiczy/Encouragement-button.git
+git push -u origin main
+// Move the turtle forward or backward depending on the button clicked.
+button("forward", "Move Forward");
+button("backward", "Move Backward");
+onEvent("forward", "click", function(event) {
+  moveForward();
+});
+
+onEvent("backward", "click", function(event) {
+  moveBackward();
+});
